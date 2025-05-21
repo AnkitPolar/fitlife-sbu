@@ -124,7 +124,7 @@
         
         // Redirect non-admin users
         if (!currentUser || currentUser.email !== 'admin@admin.com') {
-            window.location.href = 'landingpage.html';
+            window.location.href = 'index.html';
             return;
         }
 
@@ -139,10 +139,10 @@
         if (logoutBtn) {
             logoutBtn.addEventListener('click', () => {
                 if (window.auth) {
-                    auth.logout('../landingpage.html');
+                    auth.logout('../index.html');
                 } else {
                     localStorage.removeItem('currentUser');
-                    window.location.href = '../landingpage.html';
+                    window.location.href = '../index.html';
                 }
             });
         }

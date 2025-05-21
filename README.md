@@ -48,7 +48,7 @@ FitLife/
 ├── Workout-Plan/      # Workout routines
 ├── images/            # Image assets
 ├── dataconnect/       # Database connection files
-├── landingpage.html   # Main landing page
+├── index.html         # Main landing page
 ├── workout.html       # Workout plans page
 ├── Diet chat.html     # Diet plans page
 ├── profile.html       # User profile page
@@ -58,7 +58,7 @@ FitLife/
 ## 🚀 Getting Started
 
 1. Clone the repository
-2. Open `landingpage.html` in your web browser
+2. Open `index.html` in your web browser
 3. Navigate through different sections using the navigation menu
 4. Sign up to access personalized features
 

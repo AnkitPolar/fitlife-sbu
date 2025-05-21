@@ -39,7 +39,7 @@ class AuthSystem {
             
             const redirectPath = user.email === this.ADMIN_EMAIL ? 
                 '../Admin/Admin.html' : 
-                '../landingpage.html';
+                '../index.html';
                 
             this.showNotificationAndRedirect('Login successful!', 'success', redirectPath);
         } else {
@@ -161,7 +161,7 @@ class AuthSystem {
         localStorage.setItem('users', JSON.stringify(this.users));
     }
 
-    logout(redirectPath = 'landingpage.html') {
+    logout(redirectPath = 'index.html') {
         this.currentUser = null;
         localStorage.removeItem('currentUser');
         this.showNotificationAndRedirect('Logged out successfully', 'success', redirectPath);
