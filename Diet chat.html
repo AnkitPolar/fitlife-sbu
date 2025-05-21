@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="Diet chat.css"/>
+    <script src="./abcd.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Start -->
+    <nav class="navbar-one flex">
+        <div class="logo flex">
+            <img src="images/home/logo.png">
+        </div>
+        <ul class="nav-list">
+            <li><a href="landingpage.html"><h4>Home</h4></a></li>
+            <li><a href="workout.html"><h4>Workout</h4></a></li>
+            <li><a href="Diet chat.html"><h4>Diet</h4></a></li>
+            <li><a href="#about"><h4>About Us</h4></a></li>
+        </ul>
+        <div id="user-menu-container">
+            <!-- <a href="Login/SignUp.html" class="join-us-btn-wrapper">
+                <button class="btn join-us-btn">Join Us</button>
+            </a> -->
+        </div>
+    </nav>
+    <!-- Navigation End -->
+<!-- Food Menu Starts -->
+    <!-- Breakfast Section -->
+    <div class="meal-section breakfast">
+        <h1>Breakfast</h1>
+    </div>
+
+    <div class="recipies">
+        <div class="food" data-name="f-1">
+            <img src="Diet Chat\BesanChilla.png" alt="BesanChilla" width="100" height="100">
+            <span>Besan Chilla</span>
+        </div>
+        <div class="food" data-name="f-2">
+            <img src="Diet Chat/Boiled Chicken.jpg" alt="BesanChilla" width="100" height="100">
+            <span>Boiled Chicken</span>
+        </div>
+        <div class="food" data-name="f-3">
+            <img src="Diet Chat/boiled-egg.jpg  " alt="BesanChilla" width="100" height="100">
+            <span>Eggs</span>
+        </div>
+    </div>
+
+    <!-- Lunch Section -->
+    <div class="meal-section lunch">
+        <h1>Lunch</h1>
+    </div>
+
+    <div class="recipies">
+        <div class="food" data-name="f-4">
+            <img src="Diet Chat\BesanChilla.png" alt="BesanChilla" width="100" height="100">
+            <span>Besan Chilla</span>
+        </div>
+        <div class="food" data-name="f-5">
+            <img src="Diet Chat/Boiled Chicken.jpg" alt="BesanChilla" width="100" height="100">
+            <span>Boiled Chicken</span>
+        </div>
+        <div class="food" data-name="f-6">
+            <img src="Diet Chat/boiled-egg.jpg" alt="BesanChilla" width="100" height="100">
+            <span>Eggs</span>
+        </div>
+    </div>
+
+    <!-- Dinner Section -->
+    <div class="meal-section dinner">
+        <h1>Dinner</h1>
+    </div>
+
+    <div class="recipies">
+        <div class="food" data-name="f-7">
+            <img src="Diet Chat\BesanChilla.png" alt="BesanChilla" width="100" height="100">
+            <span>Besan Chilla</span>
+        </div>
+        <div class="food" data-name="f-8">
+            <img src="Diet Chat/Boiled Chicken.jpg" alt="BesanChilla" width="100" height="100">
+            <span>Boiled Chicken</span>
+        </div>
+        <div class="food" data-name="f-9">
+            <img src="Diet Chat/boiled-egg.jpg" alt="BesanChilla" width="100" height="100">
+            <span>Eggs</span>
+        </div>
+    </div>
+<!-- Food Menu End -->
+
+<!-- Food details starts -->
+<div class="details" data-target="f-1">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat\BesanChilla.png" alt="Besan Chilla">
+    <h2>Besan Chilla</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-2">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/Boiled Chicken.jpg" alt="Besan Chilla">
+    <h2>Boiled Chicken</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-3">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/boiled-egg.jpg" alt="Besan Chilla">
+    <h2>Eggs</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-4">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat\BesanChilla.png" alt="Besan Chilla">
+    <h2>Besan Chilla</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-5">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/Boiled Chicken.jpg" alt="Besan Chilla">
+    <h2>Boiled Chicken</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-6">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/boiled-egg.jpg" alt="Besan Chilla">
+    <h2>Eggs</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-7">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat\BesanChilla.png" alt="Besan Chilla">
+    <h2>Besan Chilla</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-8">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/Boiled Chicken.jpg" alt="Besan Chilla">
+    <h2>Boiled Chicken</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+
+<div class="details" data-target="f-9">
+    <i class="fas fa-times"></i> <!-- Close icon -->
+    <img src="Diet Chat/boiled-egg.jpg" alt="Besan Chilla">
+    <h2>Eggs</h2>
+    <p>Enjoy your Besan Chilla as a nutritious breakfast option!</p>
+
+    <section class="nutrition">
+        <h3><u>NUTRITION</u></h3>
+        <div class="macros">
+            <div class="macro-circle">
+                <span class="macro-value">11g</span>
+                <span class="macro-label">Protein</span>
+                <span class="macro-percentage">18%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">3g</span>
+                <span class="macro-label">Fat</span>
+                <span class="macro-percentage">11%</span>
+            </div>
+            <div class="macro-circle">
+                <span class="macro-value">36g</span>
+                <span class="macro-label">Carbs</span>
+                <span class="macro-percentage">58%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="ingredients">
+        <h3><u>INGREDIENTS</u></h3>
+        <div>FOR 1 serving</div>
+        <ul>
+            <li>40 g - besan (gram flour)</li>
+            <li>1 small onion, finely chopped</li>
+            <li>1 tomato, chopped</li>
+            <li>0.25 cup (50 g) - carrot, grated</li>
+            <li>0.25 cup (50 g) - chopped bell peppers</li>
+            <li>1 green chili, chopped</li>
+            <li>0.5-inch piece of ginger, grated</li>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>0.5 tsp cumin powder</li>
+            <li>0.5 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>Water</li>
+            <li>Cooking oil or ghee for greasing the pan</li>
+        </ul>
+    </section>
+
+    <section id="preparation" class="preparation">
+        <h3><u>HOW TO PREPARE</u></h3>
+        <ol>
+            <li>In a mixing bowl, combine all the ingredients.</li>
+            <li>Add spices and mix well.</li>
+            <li>Heat a non-stick pan and grease it with oil or ghee.</li>
+            <li>Pour a ladleful of the batter onto the pan and spread it into a circle.</li>
+            <li>Cook until golden brown on one side, flip, and cook the other side.</li>
+        </ol>
+    </section>
+</div>
+<hr>
+    <!--   *** Footer Section Starts ***   -->
+    <section class="page-footer">
+        
+        <!--   === Footer Contents Starts ===   -->
+        <div class="footer-contents">
+            
+            <div class="footer-col footer-col-1">
+                <div class="footer-col-title">
+                    <h3>About</h3>
+                </div>
+                <div class="footer-col-desc">
+                    <p>FITLIFE is your ultimate destination for personalized workout plans and diet charts, designed to fit your goals and lifestyle.</p>
+                    <p>Transform your fitness journey with expert guidance at an affordable price!</p>
+                    <span>RKL, Odisha, INDIA</span>
+                    <span>+91 6372617526</span>
+                    <span>support@fitlife.com</span>
+                    <div class="footer-social-media">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col footer-col-2">
+                <div class="footer-col-title">
+                    <h3>Quick Links</h3>
+                </div>
+                <div class="footer-col-desc">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#about">About Us</a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-col-3">
+                <div class="footer-col-title">
+                    <h3>Newsletter</h3>
+                </div>
+                <div class="footer-col-desc">
+                    <p>Stay connected with FITLIFE! Subscribe to our newsletter for exclusive fitness tips and the latest updates delivered straight to your Email.</p>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Your Email">
+                        <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!--   === Footer Contents Ends ===   -->
+
+    </section>
+    <!--   *** Footer Section End ***   -->
+
+    <!--   *** Copy Rights Start ***   -->
+    <div class="copy-rights">
+        <p>Created by <b>Ankit & Sagar</b> | © All Rights Are Reserved</p>
+    </div>
+<!--   *** Copy Rights End ***   -->
+
+<script src="abcd.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-button {
+    color: #FFA500;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.wifi-status {
+    color: #888;
+    font-size: 0.9rem;
+}
+main {
+    padding: 1rem;
+}
+h1, h2 {
+    color: #FFA500;
+}
+.nutrition {
+    margin-bottom: 2rem;
+}
+.calories {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.macros {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.macro-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.macro-circle::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 5px solid #FFA500;
+    clip: rect(0, 100px, 100px, 50px);
+}
+.macro-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.macro-label {
+    font-size: 0.8rem;
+    color: #888;
+}
+.ingredients {
+    margin-bottom: 3rem;
+    margin:100px 50px;
+}
+.ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+.ingredients li {
+    margin-bottom: 0.5rem;
+}
+.ingredients li::before {
+    content: '•';
+    color: #FFA500;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.preparation {
+    counter-reset: step-counter;
+}
+#preparation{
+    margin:100px 50px;
+}
+.step {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.step::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #FFA500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+select {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.nav-bar {
+    display: flex;
+    list-style: none;
+    background-color: #a8a12e43;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.nav-bar li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: #ffbb00;
+    font-weight: bold;
+}
+
+.nav-bar li a:hover {
+    color: #fffb00fd;
+}
+
+.breakfast::before {
+    background-image: url('./images/breakfast.jpg');
+}
+
+.lunch::before {
+    background-image: url('./images/lunch.jpg');
+}
+
+.dinner::before {
+    background-image: url('./images/dinner.jpg');
+}

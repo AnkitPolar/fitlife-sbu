@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../Admin/auth.js" defer></script>
+    <script src="./admin.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <div class="sidebar-menu">
+                <h3>Customer List</h3>
+                <div id="customer-list">
+                    <!-- Customer list will be populated here -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Dashboard Overview</h1>
+                <div class="profile">
+                    <span class="material-icons">account_circle</span>
+                    <span id="user-name">Admin</span>
+                    <button onclick="auth.logout()" class="logout-btn">
+                        <span class="material-icons">logout</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-customers">0</div>
+                    <div class="stat-label">Total Customers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-revenue">₹0</div>
+                    <div class="stat-label">Total Revenue</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="active-users">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="registered-users">0</div>
+                    <div class="stat-label">Registered Users</div>
+                </div>
+            </div>
+
+            <!-- Plan Analytics -->
+            <div class="plans-container">
+                <h2>Subscription Plans</h2>
+                <div class="plan-cards">
+                    <div class="plan-card">
+                        <h3>1 Month Plan</h3>
+                        <p class="price">₹99</p>
+                        <p class="subscribers" id="plan-1-subscribers">0 subscribers</p>
+                    </div>
+                    <div class="plan-card">
+                        <h3>3 Months Plan</h3>
+                        <p class="price">₹399</p>
+                        <p class="subscribers" id="plan-3-subscribers">0 subscribers</p>
+                    </div>
+                    <div class="plan-card">
+                        <h3>6 Months Plan</h3>
+                        <p class="price">₹699</p>
+                        <p class="subscribers" id="plan-6-subscribers">0 subscribers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registered-users-container">
+                <h2>Registered Users</h2>
+                <div class="users-table-wrapper">
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>Registration Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="registered-users-list">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Add Customer Form -->
+            <div class="add-customer-section">
+                <h2>Add New Customer</h2>
+                <form id="add-customer-form">
+                    <input type="text" id="customer-name" placeholder="Customer Name" required>
+                    <input type="email" id="customer-email" placeholder="Email" required>
+                    <input type="password" id="customer-password" placeholder="Password" required>
+                    <select id="plan-select" required>
+                        <option value="">Select Plan</option>
+                        <option value="1">1 Month (₹99)</option>
+                        <option value="3">3 Months (₹399)</option>
+                        <option value="6">6 Months (₹699)</option>
+                    </select>
+                    <button type="submit">Add Customer</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        
+        // Redirect non-admin users
+        if (!currentUser || currentUser.email !== 'admin@admin.com') {
+            window.location.href = 'landingpage.html';
+            return;
+        }
+
+        // Set admin name in header
+        const userNameElement = document.getElementById('user-name');
+        if (userNameElement) {
+            userNameElement.textContent = currentUser.userId;
+        }
+
+        // Add logout handler
+        const logoutBtn = document.querySelector('.logout-btn');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', () => {
+                if (window.auth) {
+                    auth.logout('../landingpage.html');
+                } else {
+                    localStorage.removeItem('currentUser');
+                    window.location.href = '../landingpage.html';
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
